@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build:{
     outDir: "build"
+  },
+  rollupOptions: {
+    external: ['/src/index.jsx'], // Add the import path here
   }
 })
